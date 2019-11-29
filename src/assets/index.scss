@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100vh;
+  background-color: #36394d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .hero {
+    width: 100%;
+    max-width: 1400px;
+    .heroBox {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      border: 5px solid #1d7874;
+      border-radius: 3px;
+      .heroItem {
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+        color: #069;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.2s;
+        background: #22223b;
+        border-radius: 3px;
+        cursor: pointer;
+        filter: grayscale(0.5);
+        &:hover {
+          filter: grayscale(0);
+          box-shadow: 0px 0px 16px #c5d1eb, 0 0 10px #fff;
+        }
+        .heroImg {
+          margin-bottom: 10px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .clickHero {
+        filter: grayscale(0);
+        box-shadow: 0px 0px 16px #c5d1eb, 0 0 10px #fff;
+      }
+    }
+    a {
+      display: block;
+      color: #8895b3;
+      background: #ccc;
+      border: 5px solid #999;
+      outline: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .profileBox {
+      position: relative;
+      margin-top: 5%;
+      border: 5px solid #1d7874;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-end;
+      color: #09f;
+      font-weight: bold;
+      .left {
+        width: 45%;
+        font-size: 20px;
+        .profileItem {
+          display: flex;
+          align-items: center;
+          margin: 3% 2%;
+          .pName {
+            width: 13%;
+          }
+          .pValue {
+            width: 20%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            a {
+              width: 40px;
+              height: 40px;
+              font-size: 28px;
+              cursor: not-allowed;
+            }
+            .isClick {
+              color: #1d7874;
+              border: 5px solid #1d7874;
+              background: #c5d1eb;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .right {
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 1%;
+        font-size: 28px;
+        a {
+          width: 35%;
+          padding: 5%;
+          font-size: 28px;
+          cursor: not-allowed;
+          position: relative;
+        }
+        .isSave {
+          color: #1d7874;
+          border: 5px solid #1d7874;
+          background: #c5d1eb;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

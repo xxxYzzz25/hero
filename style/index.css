@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#app {
+  height: 100vh;
+  background-color: #36394d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#app .hero {
+  width: 100%;
+  max-width: 1400px;
+}
+
+#app .hero .heroBox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 5px solid #1d7874;
+  border-radius: 3px;
+}
+
+#app .hero .heroBox .heroItem {
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  color: #069;
+  font-weight: bold;
+  font-size: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background: #22223b;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-filter: grayscale(0.5);
+          filter: grayscale(0.5);
+}
+
+#app .hero .heroBox .heroItem:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-box-shadow: 0px 0px 16px #c5d1eb, 0 0 10px #fff;
+          box-shadow: 0px 0px 16px #c5d1eb, 0 0 10px #fff;
+}
+
+#app .hero .heroBox .heroItem .heroImg {
+  margin-bottom: 10px;
+}
+
+#app .hero .heroBox .heroItem .heroImg img {
+  width: 100%;
+}
+
+#app .hero .heroBox .clickHero {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-box-shadow: 0px 0px 16px #c5d1eb, 0 0 10px #fff;
+          box-shadow: 0px 0px 16px #c5d1eb, 0 0 10px #fff;
+}
+
+#app .hero a {
+  display: block;
+  color: #8895b3;
+  background: #ccc;
+  border: 5px solid #999;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#app .hero .profileBox {
+  position: relative;
+  margin-top: 5%;
+  border: 5px solid #1d7874;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #09f;
+  font-weight: bold;
+}
+
+#app .hero .profileBox .left {
+  width: 45%;
+  font-size: 20px;
+}
+
+#app .hero .profileBox .left .profileItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3% 2%;
+}
+
+#app .hero .profileBox .left .profileItem .pName {
+  width: 13%;
+}
+
+#app .hero .profileBox .left .profileItem .pValue {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#app .hero .profileBox .left .profileItem .pValue a {
+  width: 40px;
+  height: 40px;
+  font-size: 28px;
+  cursor: not-allowed;
+}
+
+#app .hero .profileBox .left .profileItem .pValue .isClick {
+  color: #1d7874;
+  border: 5px solid #1d7874;
+  background: #c5d1eb;
+  cursor: pointer;
+}
+
+#app .hero .profileBox .right {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1%;
+  font-size: 28px;
+}
+
+#app .hero .profileBox .right a {
+  width: 35%;
+  padding: 5%;
+  font-size: 28px;
+  cursor: not-allowed;
+  position: relative;
+}
+
+#app .hero .profileBox .right .isSave {
+  color: #1d7874;
+  border: 5px solid #1d7874;
+  background: #c5d1eb;
+  cursor: pointer;
+}
+/*# sourceMappingURL=index.css.map */
